@@ -1,0 +1,43 @@
+{
+  "name": "pi-minimax-multimodal",
+  "version": "0.1.0",
+  "description": "Pi extension: MiniMax H3 multimodal APIs (video / image / speech / music / files) as agent tools",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "minimax",
+    "h3",
+    "video-generation",
+    "image-generation",
+    "text-to-speech",
+    "music-generation"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "files": [
+    "index.ts",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "smoke": "node --experimental-strip-types scripts/smoke.ts"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20.3.0"
+  }
+}
